@@ -1,0 +1,16 @@
+﻿Competing.Group,Bio.Replicate,Relative.Fitness,Variable,Treatment
+GFP2 - myoH,a,1.004332277,O2-Carrier,Low O2
+GFP2 - myoH,b,1.003886385,O2-Carrier,Low O2
+GFP2 - myoH,c,1.004483604,O2-Carrier,Low O2
+GFP2 - myoH,d,1.004492229,O2-Carrier,Low O2
+GFP2 - myoH,e,1.004146064,O2-Carrier,Low O2
+GFP2+HEM - myoG+HEM,a,0.999804929,O2-Carrier,Low O2
+GFP2+HEM - myoG+HEM,b,1.001130319,O2-Carrier,Low O2
+GFP2+HEM - myoG+HEM,c,1.001548544,O2-Carrier,Low O2
+GFP2+HEM - myoG+HEM,d,1.001391637,O2-Carrier,Low O2
+GFP2+HEM - myoG+HEM,e,1.000559158,O2-Carrier,Low O2
+GFP2 - Y55,a,1.006945324,Ancestor,Low O2
+GFP2 - Y55,b,1.007568776,Ancestor,Low O2
+GFP2 - Y55,c,1.008060116,Ancestor,Low O2
+GFP2 - Y55,d,1.007088149,Ancestor,Low O2
+GFP2 - Y55,e,1.007421134,Ancestor,Low O2
