@@ -41,20 +41,20 @@ wd <- choose.dir(default = NA, caption = "Select Folder") # choose where you wan
 setwd(wd)
 
 # interactively choose file and read csv file
-anc_low_O2_relative_file <- file.choose() %>% read.csv() 
-anc_supp_O2_relative_file <- file.choose() %>% read.csv()
+anc_low_O2_relative_file <- file.choose() %>% read.csv() # fitness_data_low_anc.csv
+anc_supp_O2_relative_file <- file.choose() %>% read.csv() # fitness_data_supp_anc.csv
 anc_df <- rbind(anc_low_O2_relative_file, anc_supp_O2_relative_file)
 anc_df$cluster.size <- rep("Normal SF", length(anc_df$Competing.Group))
 #anc_df$cluster.size <- rep(expression(paste("Normal Snowflake (ace2",delta,")")), length(anc_df$Competing.Group))
 
-small_low_O2_relative_file <- file.choose() %>% read.csv()
-small_supp_O2_relative_file <- file.choose() %>% read.csv()
+small_low_O2_relative_file <- file.choose() %>% read.csv() # fitness_data_low_small.csv
+small_supp_O2_relative_file <- file.choose() %>% read.csv() # fitness_data_supp_small.csv
 small_df <- rbind(small_low_O2_relative_file, small_supp_O2_relative_file)
 small_df$cluster.size <- rep("Small SF", length(small_df$Competing.Group))
 #small_df$cluster.size <- rep(expression("Small Snowflake (ace2\delta + bud8\delta)"), length(small_df$Competing.Group))
 
-unicell_lowO2_relative_file <- file.choose() %>% read.csv()
-unicell_suppO2_relative_file <- file.choose() %>% read.csv()
+unicell_lowO2_relative_file <- file.choose() %>% read.csv() # fitness_unicell_YPGly_low.csv
+unicell_suppO2_relative_file <- file.choose() %>% read.csv() # fitness_unicell_YPGly_high.csv
 unicell_df <- rbind(unicell_lowO2_relative_file, unicell_suppO2_relative_file)
 unicell_df <- unicell_df[!unicell_df$Variable == "Ancestor", ] # removes Y55 data
 unicell_df$Relative.Fitness <- unicell_df$Relative.Fitness - 1
