@@ -1,4 +1,4 @@
-### plotting model - figure 3A ###
+### plotting model - figure 3A and 3B ###
 
 ###history###
 # from 'oxygen_consumption.R'# script
@@ -58,9 +58,9 @@ highO2 <- ggplot(o.df, aes(R, value)) + geom_line(aes(colour = Groups, linetype 
   guides(color = guide_legend(ncol = 2)) + scale_linetype_manual(labels = c(expression(O[2]~ consumption), expression(O[2]~ concentration), "Unbound myoglobin", expression(O[2]~ bound~myoglobin)), values=c("dashed", "solid", "solid", "solid"))
 
 # 10 micron and 20 micron
-small.10 <- file.choose() %>% read.csv() 
+small.10 <- file.choose() %>% read.csv() # 10_micron.csv
 #read.csv("Tonys_modeldata/new_model_8apr2023/new_model_8apr2023/10_micron.csv")
-large.20 <- file.choose() %>% read.csv() 
+large.20 <- file.choose() %>% read.csv() # 20_micron.csv
 #read.csv("Tonys_modeldata/new_model_8apr2023/new_model_8apr2023/20_micron.csv")
 
 s.df <- pivot_longer(small.10, 2:5) %>% as.data.frame()
