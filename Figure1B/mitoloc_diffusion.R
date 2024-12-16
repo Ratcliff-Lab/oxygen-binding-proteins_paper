@@ -36,10 +36,10 @@ wd <- choose.dir(default = NA, caption = "Select Folder")
 setwd(wd)
 
 #chose the .csv file
-ML_low_data_file <- file.choose() %>% read.csv()
+ML_low_data_file <- file.choose() %>% read.csv() # Low_Total_notcoded.csv
 ML_low_data_file$Group <- factor(ML_low_data_file$Group, levels = c("GOB8", "MyoH", "MyoG"))
 
-ML_supp_data_file <- file.choose() %>% read.csv()
+ML_supp_data_file <- file.choose() %>% read.csv() # Supplemental_Total_notcoded.csv 
 ML_supp_data_file$Group <- factor(ML_supp_data_file$Group, levels = c("GOB8", "MyoH", "MyoG"))
 
 yellow <- "#F1C40F"
